@@ -1,0 +1,136 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(image/background.jpg) center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    background: white;
+    width: 500px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* HEADINGS */
+h1 {
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #243b55;
+    margin: 20px 0 12px;
+}
+
+p {
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 20px
+}
+
+/* PLANET LIST */
+#planetList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.planet {
+    background: #e9eff7;
+    padding: 12px;
+    border-radius: 8px;
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* INPUT FIELD */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccd5e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #344f73;
+}
+
+/* BUTTONS */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #344f73;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1d304a;
+}
+
+/* SEARCH RESULT */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f0f3f8;
+    color: #243b55;
+    line-height: 1.6;
+}
+
+#result h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* PLANET IMAGE */
+
+.planet-image {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+
+    /* Blend image background */
+    mix-blend-mode: multiply;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    #planetList {
+        grid-template-columns: 1fr;
+    }
+}
+
