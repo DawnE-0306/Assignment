@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Explorer</title>
+    <link rel="icon" href="image/galaxy.jpg">
+
+    <link rel="stylesheet" href="reign.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🪐 Planet Explorer</h1>
+        <p>Discover the eight planets in our solar system!</p>
+
+        <h2>Available Planets</h2>
+
+        <div id="planetList"></div>
+
+        <h2>Search for a Planet</h2>
+
+        <input 
+            type="number" 
+            id="planetIndex" 
+            placeholder="Enter planet index"
+        >
+
+        <button onclick="searchPlanet()">Search Planet</button>
+
+        <!-- <button onclick="clearSearch()">Clear</button> -->
+
+        <div id="result"></div>
+
+    </div>
+    <script src="brix.js"></script>
+
+</body>
+</html>
